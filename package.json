@@ -20,7 +20,13 @@
     "@angular/platform-browser": "^6.0.3",
     "@angular/platform-browser-dynamic": "^6.0.3",
     "@angular/router": "^6.0.3",
+    "@angular/service-worker": "^6.0.7",
+    "@ng-bootstrap/ng-bootstrap": "^2.2.0",
+    "@ngx-translate/core": "^10.0.2",
+    "@types/lodash": "^4.14.110",
+    "bootstrap": "^4.1.1",
     "core-js": "^2.5.4",
+    "lodash": "^4.17.10",
     "rxjs": "^6.0.0",
     "zone.js": "^0.8.26"
   },

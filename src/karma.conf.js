@@ -1,6 +1,9 @@
 // Karma configuration file, see link for more information
 // https://karma-runner.github.io/1.0/config/configuration-file.html
 
+process.env.CHROME_BIN = require('puppeteer').executablePath();
+const path = require('path');
+
 module.exports = function (config) {
   config.set({
     basePath: '',
@@ -13,7 +16,8 @@ module.exports = function (config) {
       require('@angular-devkit/build-angular/plugins/karma')
     ],
     client: {
-      clearContext: false // leave Jasmine Spec Runner output visible in browser
+      clearContext: false, // leave Jasmine Spec Runner output visible in browser
+      captureConsole: Boolean(process.env.KARMA_ENABLE_CONSOLE)
     },
     coverageIstanbulReporter: {
       dir: require('path').join(__dirname, '../coverage'),
